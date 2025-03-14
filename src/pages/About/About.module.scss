@@ -1,0 +1,56 @@
+@import '@/app/styles/variables/_mixins';
+.About {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &Title {
+    @include titleH2;
+    text-align: center;
+    font-family: var(--font-open-sans);
+    margin-bottom: 1rem;
+  }
+  &Image {
+    width: 150px;
+    height: 150px;
+  }
+  &Wrapper {
+    display: flex;
+    gap: 1.5rem;
+  }
+  &Block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &Descr {
+    @include paragraph3;
+    text-indent: -0.2rem;
+    line-height: 1.5;
+  }
+  &Link {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px dashed var(--purple-800);
+  }
+}
+
+[data-key='me']::before {
+  content: url('../../../public/computer.svg');
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+[data-key='interface']::before {
+  content: url('../../../public/student.svg');
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+[data-key='resources']::before {
+  content: url('../../../public/education.svg');
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}

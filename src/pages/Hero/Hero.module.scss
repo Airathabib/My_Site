@@ -1,0 +1,25 @@
+@import '@/app/styles/variables/_mixins';
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &Title {
+    text-align: start;
+    @include titleH1;
+    font-family: var(--font-open-sans);
+  }
+  &Greet {
+    @include paragraph1;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Hero {
+    flex-direction: column;
+    &Image {
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@mixin titleH1 {
+  font-weight: bold;
+  font-size: clamp(2rem, 4vw, 4rem);
+  word-spacing: 0.5rem;
+}
+
+@mixin titleH2 {
+  font-weight: bold;
+  font-size: clamp(2rem, 4vw, 3rem);
+  word-spacing: 0.5rem;
+}
+
+@mixin titleH3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+}
+
+@mixin titleH4 {
+  font-weight: bold;
+  font-size: 1rem;
+  word-spacing: 0.5rem;
+}
+
+@mixin titleH5 {
+  font-weight: bold;
+  font-size: 1rem;
+  word-spacing: 0.5rem;
+}
+
+@mixin paragraph1 {
+  font-weight: medium;
+  font-size: clamp(1rem, 0.279rem + 2.745vw, 2.75rem);
+  word-spacing: 0.5rem;
+}
+
+@mixin paragraph2 {
+  font-weight: medium;
+  font-size: 1.125rem;
+  word-spacing: 0.5rem;
+}
+
+@mixin paragraph3 {
+  font-weight: normal;
+  font-size: 1rem;
+  word-spacing: 0.5rem;
+}
+
+@mixin paragraph4 {
+  font-weight: medium;
+  font-size: 1rem;
+  word-spacing: 0.5rem;
+}
+
+@mixin paragraph5 {
+  font-weight: normal;
+  font-size: 0.875rem;
+  word-spacing: 0.5rem;
+}
+
+@mixin paragraph6 {
+  font-weight: medium;
+  font-size: 0.875rem;
+  word-spacing: 0.5rem;
+}
+
+@mixin paragraph7 {
+  font-weight: normal;
+  font-size: 0.75rem;
+  word-spacing: 0.25rem;
+}
+
+@mixin paragraph8 {
+  font-weight: medium;
+  font-size: 0.75rem;
+  word-spacing: 0.25rem;
+}
+
+@mixin paragraph9 {
+  font-weight: normal;
+  font-size: 0.625rem;
+  word-spacing: 0.25rem;
+}
+
+@mixin paragraph10 {
+  font-weight: medium;
+  font-size: 0.625rem;
+  word-spacing: 0.25rem;
+}
