@@ -26,6 +26,24 @@
     @include paragraph3;
     text-indent: -0.2rem;
     line-height: 1.5;
+    &Me::before {
+      content: url('../../../public/computer.svg');
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+    }
+    &Interface::before {
+      content: url('../../../public/student.svg');
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+    }
+    &Resourses::before {
+      content: url('../../../public/education.svg');
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+    }
   }
   &Link {
     margin: 0.5rem;
@@ -33,24 +51,4 @@
     color: inherit;
     border-bottom: 2px dashed var(--purple-800);
   }
-}
-
-[data-key='me']::before {
-  content: url('../../../public/computer.svg');
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-[data-key='interface']::before {
-  content: url('../../../public/student.svg');
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
-[data-key='resources']::before {
-  content: url('../../../public/education.svg');
-  display: inline-block;
-  width: 16px;
-  height: 16px;
 }
