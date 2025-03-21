@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './Experience.module.scss';
 import React from 'react';
 
-const  Experience:React.FC = () =>{
+export default function Experience() {
   return (
     <div className={styles.Experience} id='experience'>
       <h2 className={styles.ExperienceTitle}>Опыт работы</h2>
@@ -65,5 +65,3 @@ const  Experience:React.FC = () =>{
     </div>
   );
 }
-
-export default Experience;

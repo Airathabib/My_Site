@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.HeroTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  word-spacing: 0.5rem;
+  color: var(--white-primary);
+  font-family: var(--font-open_sans);
+}

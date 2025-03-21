@@ -1,9 +1,7 @@
-import React from 'react';
 import Image from 'next/image';
-
 import styles from './Hero.module.scss';
 
-const Hero: React.FC = () => {
+export default function Hero() {
   return (
     <div className={styles.Hero}>
       <div>
@@ -21,6 +19,4 @@ const Hero: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default Hero;
+}

@@ -1,0 +1,83 @@
+@import '@/app/styles/variables/_mixins';
+.Card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1.5px solid var(--border-primary);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  &ImageWrapper {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+  &Image {
+    object-fit: cover;
+    background-color: var(--purple-100);
+  }
+  &Info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px 32px;
+    gap: 1rem;
+    margin-top: auto;
+  }
+  &LinkWrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  &Link {
+    text-decoration: none;
+    @include paragraph8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--purple-primary);
+    color: var(--white-primary);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease, outline 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease,
+      outline 0.3s ease;
+    -moz-transition: background-color 0.3s ease, color 0.3s ease,
+      outline 0.3s ease;
+    -ms-transition: background-color 0.3s ease, color 0.3s ease,
+      outline 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.3s ease,
+      outline 0.3s ease;
+    &:hover {
+      background-color: var(--white-primary);
+      color: var(--purple-primary);
+      outline: 2px solid var(--purple-primary);
+    }
+    &:active {
+      background-color: var(--white-primary);
+      color: var(--purple-primary);
+      outline: 2px solid var(--purple-primary);
+    }
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .Card {
+    &Link {
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}

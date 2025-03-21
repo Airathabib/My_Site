@@ -1,8 +1,6 @@
-import React from 'react';
 import styles from './MyStack.module.scss';
 import Image from 'next/image';
-
-const MyStack: React.FC = () => {
+export default function MyStack() {
   return (
     <div className={styles.Stack} id='stack'>
       <h2 className={styles.StackTitle}>Мой стек</h2>
@@ -89,6 +87,4 @@ const MyStack: React.FC = () => {
       </ul>
     </div>
   );
-};
-
-export default MyStack;
+}

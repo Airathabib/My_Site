@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Roboto, Open_Sans } from 'next/font/google';
+import './globals.css';
 import Providers from '@/features/theme/ThemeProvider';
 import ThemeSwither from '@/features/theme/ThemeSwitcher';
-import './globals.scss';
 
 const roboto = Roboto({
   variable: '--font-roboto',
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ru'>
+    <html lang='ru' suppressHydrationWarning>
       <body className={`${open_sans.variable} ${roboto.variable}`}>
         <Providers>
           <ThemeSwither>{children}</ThemeSwither>

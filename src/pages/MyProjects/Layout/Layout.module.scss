@@ -1,0 +1,24 @@
+.Layout {
+  &CardWrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 550px);
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Layout {
+    &CardWrapper {
+      grid-template-columns: repeat(2, 350px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Layout {
+    &CardWrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
