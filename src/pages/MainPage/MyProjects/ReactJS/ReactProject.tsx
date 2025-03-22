@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card/card';
+import Card from './Card/Card';
 
 import { REACT_PROJECT } from '../data';
 import styles from './React.module.scss';

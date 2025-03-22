@@ -1,7 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import Layout from './Layout/page';
-import ReactJS from './ReactJS/page';
+import Layout from './Layout/LayoutProject';
+import ReactJS from './ReactJS/ReactProject';
+
 import styles from './MyProjects.module.scss';
 
 const MyProjects: React.FC = () => {
