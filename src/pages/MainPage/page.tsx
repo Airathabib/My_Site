@@ -9,7 +9,7 @@ import MyProjects from './MyProjects/MyProjects';
 
 const MainPage: React.FC = () => {
   return (
-    <div>
+    <>
       <Header />
       <Hero />
       <About />
@@ -17,7 +17,7 @@ const MainPage: React.FC = () => {
       <MyStack />
       <MyProjects />
       <Footer />
-    </div>
+    </>
   );
 };
 

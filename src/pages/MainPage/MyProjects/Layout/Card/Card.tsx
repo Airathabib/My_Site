@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CardInfo } from '../../data';
+import { CardInfo } from '@/entities/data/data';
 import styles from './Card.module.scss';
 
 const Card: React.FC<CardInfo> = (props) => {
