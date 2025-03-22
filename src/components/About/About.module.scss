@@ -28,20 +28,20 @@
     line-height: 1.5;
 
     &Me::before {
-      content: url('../../../../public/computer.svg');
+      content: url('../../../public/computer.svg');
       display: inline-block;
       width: 16px;
       height: 16px;
     }
     &Interface::before {
-      content: url('../../../../public/student.svg');
+      content: url('../../../public/student.svg');
       display: inline-block;
       width: 16px;
       height: 16px;
     }
 
     &Resourses::before {
-      content: url('../../../../public/education.svg');
+      content: url('../../../public/education.svg');
       display: inline-block;
       width: 16px;
       height: 16px;

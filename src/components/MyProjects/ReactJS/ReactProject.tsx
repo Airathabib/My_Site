@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card/Card';
 
-import { REACT_PROJECT } from '../../../../entities/data/data';
+import { REACT_PROJECT } from '@/entities/data/data';
 import styles from './React.module.scss';
 
 const ReactJS: React.FC = () => {
