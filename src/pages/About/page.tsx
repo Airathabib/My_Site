@@ -18,17 +18,20 @@ const About: React.FC = () => {
           />
         </div>
         <div className={styles.AboutBlock}>
-          <p className={styles.AboutDescr} data-key='me'>
+          <p className={styles.AboutDescr}>
+            <span className={styles.AboutDescrMe}></span>
             Frontend-разработчик из Ставрополя (Россия), который ищет развития и
             профессионального роста.
           </p>
 
-          <p className={styles.AboutDescr} data-key='interface'>
+          <p className={styles.AboutDescr}>
+            <span className={styles.AboutDescrInterface}></span>
             Пришёл во frontend-разработку, чтобы разрабатывать крутые интерфейсы
             и максимально улучшать пользовательский опыт.
           </p>
 
-          <p className={styles.AboutDescr} data-key='resources'>
+          <p className={styles.AboutDescr}>
+            <span className={styles.AboutDescrResourses}></span>
             Cлушаю{' '}
             <Link
               className={styles.AboutLink}
