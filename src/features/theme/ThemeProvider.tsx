@@ -9,10 +9,21 @@ const Providers: FC<PropsWithChildren> = ({ children }) => {
   useEffect(() => {
     setMounted(true);
   }, []);
+
   if (!mounted) {
     return <>{children}</>;
   }
-  return <ThemeProvider>{children}</ThemeProvider>;
+
+  return (
+    <ThemeProvider
+      attribute='class'
+      defaultTheme='light'
+      enableSystem={false}
+      disableTransitionOnChange={false}
+    >
+      {children}
+    </ThemeProvider>
+  );
 };
 
 export default Providers;

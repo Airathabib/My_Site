@@ -5,37 +5,44 @@
   &SwitchBtn {
     position: fixed;
     top: 3%;
+    right: 3%; // Добавлено для лучшего позиционирования
     border: none;
     background-color: transparent;
     width: 35px;
     height: 35px;
     align-self: flex-end;
     z-index: 200;
-  }
-  &SwitchSun {
-    color: var(--icon-sun);
-    width: 25px;
-    height: 25px;
     cursor: pointer;
-    transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -ms-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
+    border-radius: 50%; // Добавлено для лучшего UX
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
     &:hover {
-      opacity: 0.8;
+      background-color: var(--hover-bg, rgba(0, 0, 0, 0.1));
     }
   }
+
+  &SwitchIcon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease, opacity 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+
+  // Объединяем стили для иконок, так как они теперь используют один класс
+  &SwitchSun,
   &SwitchMoon {
-    color: var(--icon-moon);
     width: 25px;
     height: 25px;
     cursor: pointer;
     transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -ms-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
     &:hover {
       opacity: 0.8;
     }
