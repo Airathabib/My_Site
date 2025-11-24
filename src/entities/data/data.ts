@@ -27,6 +27,26 @@ export const REACT_PROJECT: CardInfo[] = [
     gitLink: 'https://github.com/Airathabib/Practice',
     showLink: 'https://practice-roan-pi.vercel.app/',
   },
+  {
+    id: crypto.randomUUID(),
+    src: '/mern_blog.png',
+    title: 'MERN блог',
+    alt: 'Pet project',
+    descr:
+      'Современный блог-платформа с вложенными комментариями, лайками, тегами и тёмной темой.Построен на React, Redux Toolkit, Material UI и TypeScript-дружественной архитектуре.',
+    gitLink: 'https://github.com/Airathabib/mern-blog-frontend',
+    showLink: 'https://mern-blog-frontend-taupe.vercel.app/',
+  },
+  {
+    id: crypto.randomUUID(),
+    src: '/el_store.png',
+    title: 'Electronic store',
+    alt: 'Pet project',
+    descr:
+      'Современный интернет-магазин с полной функциональностью. Учебный fullstack-проект с использованием: фронтенда на React + Redux Toolkit и бэкенда на Node.js + Express + PostgreSQL.',
+    gitLink: 'https://github.com/Airathabib/skyLine-gadgets-frontend',
+    showLink: 'https://sky-line-gadgets-frontend.vercel.app/',
+  },
 ];
 
 export const LAYOUT: CardInfo[] = [
