@@ -6,12 +6,6 @@
   margin: 0;
 }
 
-:root {
-  --transition-duration: 0.2s;
-  --transition-easing: ease-in-out;
-}
-
-/* ✅ ВАЖНО: применяем transition ко всем элементам внутри .theme-transition */
 .theme-transition *,
 .theme-transition *::before,
 .theme-transition *::after {
