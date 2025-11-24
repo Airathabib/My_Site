@@ -28,27 +28,35 @@
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
     cursor: pointer;
-    border-color: var(--purple-primary);
-    color: var(--purple-primary);
-    transition: background-color 0.3s ease, color 0.3s ease,
-      border-color 0.3s ease;
-    -webkit-transition: background-color 0.3s ease, color 0.3s ease,
-      border-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease, color 0.3s ease,
-      border-color 0.3s ease;
-    -ms-transition: background-color 0.3s ease, color 0.3s ease,
-      border-color 0.3s ease;
-    -o-transition: background-color 0.3s ease, color 0.3s ease,
-      border-color 0.3s ease;
+    border: 1px solid var(--color-secondary-200);
+
+    color: var(--color-secondary-200);
+    transition: background-color 0.2s ease, color 0.2s ease,
+      border-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease, color 0.2s ease,
+      border-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease, color 0.2s ease,
+      border-color 0.2s ease;
+    -ms-transition: background-color 0.2s ease, color 0.2s ease,
+      border-color 0.2s ease;
+    -o-transition: background-color 0.2s ease, color 0.2s ease,
+      border-color 0.2s ease;
     &:hover {
-      color: var(--white-primary);
-      background-color: var(--purple-primary);
+      color: var(--color-neutral-900);
+      background-color: var(--color-secondary-300);
       border-color: transparent;
     }
     &:active {
-      color: var(--white-primary);
-      background-color: var(--purple-primary);
+      color: var(--color-neutral-900);
+      background-color: var(--color-secondary-300);
       border-color: transparent;
+    }
+    &.active {
+      background-color: var(--color-secondary-300);
+      color: var(--color-neutral-900);
+      border-color: transparent;
+      font-weight: var(--font-weight-bold);
+      box-shadow: var(--shadow-base-default);
     }
   }
 }

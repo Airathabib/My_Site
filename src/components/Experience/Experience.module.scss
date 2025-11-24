@@ -23,7 +23,7 @@
     }
     &TitleH4 {
       @include titleH4;
-      border-bottom: 2px dashed var(--purple-800);
+      border-bottom: 2px dashed var(--color-secondary-200);
       display: inline-block;
       padding-bottom: 0.25rem;
       margin-bottom: 0.25rem;

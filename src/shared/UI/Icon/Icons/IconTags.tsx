@@ -1,4 +1,4 @@
-export const IconTags: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+ const IconTags: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     width='24px'
     height='24px'

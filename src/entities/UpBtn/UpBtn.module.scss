@@ -1,3 +1,6 @@
+:root {
+  --transition-var: transform 0.3s ease, color 0.3s ease;
+}
 .Wrapper {
   display: flex;
   &UpBtn {
@@ -5,16 +8,16 @@
     right: 10%;
     bottom: 10%;
     background: inherit;
-    fill: var(--purple-primary);
+    fill: var(--color-secondary-300);
     border: none;
     cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
-    -webkit-transition: transform 0.3s ease, color 0.3s ease;
-    -moz-transition: transform 0.3s ease, color 0.3s ease;
-    -ms-transition: transform 0.3s ease, color 0.3s ease;
-    -o-transition: transform 0.3s ease, color 0.3s ease;
+    transition: var(--transition-var);
+    -webkit-transition: var(--transition-var);
+    -moz-transition: var(--transition-var);
+    -ms-transition: var(--transition-var);
+    -o-transition: var(--transition-var);
     &:hover {
-      color: var(--purple-700);
+      color: var(--color-secondary-400);
       transform: scale(1.1);
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
@@ -25,7 +28,7 @@
       outline: none;
     }
     &:focus-visible {
-      outline: 1px solid var(--purple-primary);
+      outline: 1px solid var(--color-secondary-300);
     }
   }
 }

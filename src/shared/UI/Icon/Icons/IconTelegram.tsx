@@ -1,8 +1,6 @@
-export const IconTelegram: React.FC<React.SVGProps<SVGSVGElement>> = (
-  props
-) => (
+const IconTelegram: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
-    fill='#000000'
+    fill=''
     width='800px'
     height='800px'
     viewBox='0 0 256 256'

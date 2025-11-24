@@ -1,7 +1,17 @@
 import * as Icons from './Icons/index';
 
 //
-type IconName = 'tags' | 'react' | 'arrowUp' | 'git' | 'mail' | 'telegram';
+export type IconName =
+  | 'tags'
+  | 'react'
+  | 'arrowUp'
+  | 'git'
+  | 'mail'
+  | 'telegram'
+  | 'cardLink'
+  | 'loading'
+  | 'moon'
+  | 'sun';
 
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
   name: IconName;

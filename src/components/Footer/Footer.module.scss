@@ -25,7 +25,7 @@
     -ms-transition: transform 0.3s ease, color 0.3s ease;
     -o-transition: transform 0.3s ease, color 0.3s ease;
     &:hover {
-      color: var(--purple-700);
+      color: var(--color-secondary-400);
       transform: scale(1.1);
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);

@@ -1,4 +1,4 @@
-export const IconMail: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+ const IconMail: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     width='24px'
     height='24px'

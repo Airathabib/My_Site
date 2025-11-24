@@ -1,4 +1,4 @@
-@import './styles/variables/variable.css';
+@import './styles/variables/variable.scss';
 
 * {
   box-sizing: border-box;
@@ -7,41 +7,46 @@
 }
 
 :root {
-  --transition-duration: 0.3s;
-  --transition-easing: ease;
+  --transition-duration: 0.2s;
+  --transition-easing: ease-in-out;
 }
 
-.theme-transition * {
+/* ✅ ВАЖНО: применяем transition ко всем элементам внутри .theme-transition */
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
   transition: background-color var(--transition-duration)
       var(--transition-easing),
     color var(--transition-duration) var(--transition-easing),
     border-color var(--transition-duration) var(--transition-easing),
-    box-shadow var(--transition-duration) var(--transition-easing);
+    box-shadow var(--transition-duration) var(--transition-easing),
+    opacity var(--transition-duration) var(--transition-easing);
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
   width: 10px;
-  background-color: #f9f9fd;
+  background-color: var(--color-neutral-100);
 }
 
 html::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: var(--purple-primary);
+  background-color: var(--color-secondary-100);
 }
 
 html::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background-color: #f9f9fd;
+  background-color: var(--color-neutral-100);
 }
 
 body {
+  background-color: var(--color-neutral-0);
+  color: var(--color-neutral-900);
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,9 +56,14 @@ body {
   padding-right: clamp(0.5rem, -3.669rem + 15.882vw, 10.625rem);
   max-width: 1440px;
   margin: 0 auto;
+
+  /* ✅ Явно указываем transition для body */
+  transition: background-color var(--transition-duration)
+      var(--transition-easing),
+    color var(--transition-duration) var(--transition-easing);
 }
 
 [data-theme='dark'] .content {
-  background-color: var(--white-primary);
-  color: var(--black-primary);
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-900);
 }

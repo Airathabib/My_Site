@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌐 Портфолио Frontend-Разработчика
+Персональное портфолио, демонстрирующее навыки в современной веб-разработке: адаптивная вёрстка, React, TypeScript, управление состоянием, темизация и доступность.
 
-## Getting Started
+✨ Возможности
+🎨 Плавное переключение темы (светлая / тёмная) с сохранением в localStorage
+🧩 Адаптивный дизайн — корректное отображение на всех устройствах
+📁 Разделы проектов:
+Верстка (landing pages, компоненты)
+React / JavaScript (fullstack-приложения)
+🖼️ Кастомные SVG-иконки через универсальный компонент Icon
+🎛️ Универсальные UI-компоненты: Button, ThemeSwitcher
+🧪 Современный стек: Next.js, TypeScript, SCSS (BEM + CSS Modules), next-themes
+♿ Доступность: aria-\* атрибуты, :focus-visible, семантическая разметка
+🛠️ Технологии
+Фронтенд
+Next.js (App Router)
+TypeScript
+React (Hooks, Client Components)
+SCSS с методологией BEM и CSS Modules
+next-themes — управление темой
+React Icons (временно) + кастомные SVG-иконки
+Инструменты
+Vercel — хостинг и preview-деплои
+ESLint + Prettier — единый кодстайл
+Figma — дизайн-макеты
 
-First, run the development server:
+🚀 Запуск локально
+Клонируй репозиторий
+bash
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/Airathabib/my-portfolio.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# cd my-portfolio
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+git clone https://github.com/Airathabib/my-portfolio.git
+cd my-portfolio
+Установи зависимости
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# npm install
 
-## Learn More
+# yarn install
 
-To learn more about Next.js, take a look at the following resources:
+Запусти dev-сервер
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+\*\*Открой http://localhost:3000\*\*
 
-## Deploy on Vercel
+🌍 Деплой
+Приложение автоматически деплоится на Vercel при пуше в основную ветку.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔗 Live-версия: https://my-site-alpha-six.vercel.app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📬 Контакты
+Разработчик: Айрат Хабибулаев
+
+📧 Email: airat.24@mail.ru
+💬 Telegram: @Airat_Habibulaev
+💼 GitHub: github.com/Airathabib
+🌐 Портфолио: my-site-alpha-six.vercel.app
+📄 Лицензия
+Этот проект предназначен для демонстрации профессиональных навыков и не имеет открытой лицензии.
+Любое использование кода — только с разрешения автора.

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import ThemeSwitcher from '@/features/theme/ThemeSwitcher';
 
 import styles from './Nav.module.scss';
 
@@ -49,6 +50,7 @@ const Nav: React.FC = () => {
           Контакты
         </Link>
       </ul>
+      <ThemeSwitcher />
       <div onClick={() => setNav(!nav)} className={styles.NavMobileBtn}>
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>

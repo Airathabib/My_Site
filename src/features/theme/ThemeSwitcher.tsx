@@ -1,40 +1,35 @@
 'use client';
-import { FC, PropsWithChildren, useEffect } from 'react';
+
 import { useTheme } from 'next-themes';
-import { FiMoon } from 'react-icons/fi';
-import { BsSun } from 'react-icons/bs';
-import styles from './ThemeSwther.module.scss';
+import { Icon } from '@/shared/UI/Icon/Icon';
+import styles from './ThemeSwitcher.module.scss';
 
-const ThemeSwither: FC<PropsWithChildren> = ({ children }) => {
-  const { theme, setTheme } = useTheme();
+const ThemeSwitcher = () => {
+  const { theme = 'light', setTheme } = useTheme();
 
-  useEffect(() => {
-    const handleThemeChange = () => {
-      document.documentElement.classList.add('theme-transition');
-      setTimeout(() => {
-        document.documentElement.classList.remove('theme-transition');
-      }, 300);
-    };
-
-    handleThemeChange();
-  }, [theme]);
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
 
   return (
-    <div className={styles.Wrapper}>
+    <div className={styles.switcherWrapper}>
       <button
-        className={styles.WrapperSwitchBtn}
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-        aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+        type='button'
+        className={styles.switcher}
+        onClick={toggleTheme}
+        aria-label={
+          theme === 'light' ? 'Включить тёмную тему' : 'Включить светлую тему'
+        }
       >
-        {theme === 'dark' ? (
-          <BsSun className={styles.WrapperSwitchIcon} />
-        ) : (
-          <FiMoon className={styles.WrapperSwitchIcon} />
-        )}
+        <div className={styles.iconWrapper} data-active={theme === 'light'}>
+          <Icon name='sun' size={24} />
+        </div>
+        <div className={styles.iconWrapper} data-active={theme === 'dark'}>
+          <Icon name='moon' size={24} />
+        </div>
       </button>
-      {children}
     </div>
   );
 };
 
-export default ThemeSwither;
+export default ThemeSwitcher;

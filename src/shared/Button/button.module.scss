@@ -1,0 +1,116 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-default);
+  border: none;
+  font-weight: 600;
+  font-size: var(--body-md-semi);
+  line-height: var(--line-height-reg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: var(--radius-reg);
+  -webkit-border-radius: var(--radius-reg);
+  -moz-border-radius: var(--radius-reg);
+  -ms-border-radius: var(--radius-reg);
+  -o-border-radius: var(--radius-reg);
+}
+
+:root {
+  --transition-fast: all 0.2s ease;
+}
+
+.button,
+.priority_1,
+.priority_2,
+.priority_3 {
+  transition: var(--transition-fast);
+  -webkit-transition: var(--transition-fast);
+  -moz-transition: var(--transition-fast);
+  -ms-transition: var(--transition-fast);
+  -o-transition: var(--transition-fast);
+}
+
+.button.primary {
+  width: 118px;
+  height: 40px;
+}
+.button.secondary,
+.button.tertiary {
+  width: 98px;
+  height: 48px;
+}
+
+/* --- Стили variant=secondary (берём из твоего примера) --- */
+.secondary {
+  padding: 12px 16px;
+  background-color: var(--color-secondary-400);
+  border-radius: 0.5rem;
+  color: var(--color-neutral-100);
+  box-shadow: var(--shadow-base);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.secondary:hover {
+  color: var(--color-neutral-100);
+  background-color: var(--color-secondary-300);
+  border-color: transparent;
+  box-shadow: var(--shadow-base-hover);
+}
+
+.secondary:focus-visible {
+  color: var(--color-neutral-100);
+  background-color: var(--color-secondary-300);
+  border-color: transparent;
+  border-radius: 0.5rem;
+  outline-offset: var(--outline-offset);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.secondary[aria-pressed='true'] {
+  background-color: var(--color-neutral-500);
+  box-shadow: var(--shadow-base-default);
+  cursor: not-allowed;
+}
+
+/* --- Loading states --- */
+.loading-primary {
+  background-color: var(--color-primary-300);
+}
+.loading-secondary {
+  background-color: var(--color-neutral-600);
+}
+.loading-tertiary {
+  background-color: var(--color-neutral-0);
+}
+
+/* --- Disabled --- */
+.button.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* --- Иконка для анимации --- */
+// .icon {
+//   /* будет анимироваться при .loading */
+// }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading .icon {
+  animation: spin 1s linear infinite;
+}

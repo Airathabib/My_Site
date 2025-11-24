@@ -8,6 +8,8 @@ const Providers: FC<PropsWithChildren> = ({ children }) => {
 
   useEffect(() => {
     setMounted(true);
+
+    document.documentElement.classList.add('theme-transition');
   }, []);
 
   if (!mounted) {

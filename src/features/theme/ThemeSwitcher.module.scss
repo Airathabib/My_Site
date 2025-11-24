@@ -1,0 +1,89 @@
+.switcherWrapper {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 40px;
+  background-color: var(--color-neutral-300);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  gap: var(--gap-default);
+  transition: all 0.2s ease;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+/* Цвет иконок */
+.iconWrapper svg path {
+  fill: var(--icon-sun);
+  transition: all 0.2s ease;
+}
+
+/* Активная иконка */
+.iconWrapper[data-active='true'] {
+  background-color: var(--color-neutral-400);
+  box-shadow: var(--shadow-base-default);
+}
+
+.iconWrapper[data-active='true']:hover {
+  background-color: var(--icon-moon);
+}
+
+.iconWrapper[data-active='true']:hover svg path {
+  fill: var(--icon-sun);
+}
+
+/* Неактивная иконка */
+.iconWrapper[data-active='false'] {
+  background-color: transparent;
+}
+
+.iconWrapper[data-active='false'] svg path {
+  fill: var(--color-neutral-500);
+}
+
+/* Фокус */
+.switcher:focus-visible {
+  outline: 2px solid var(--color-base-white);
+  outline-offset: var(--outline-offset, 2px);
+  border-radius: var(--radius-reg);
+}
+
+.switcher:focus-visible .iconWrapper[data-active='true'] {
+  background-color: var(--color-base-white);
+}
+
+.switcher:focus-visible .iconWrapper[data-active='false'] {
+  background-color: var(--color-base-400);
+}
+
+.switcher:focus-visible .iconWrapper[data-active='true'] svg path {
+  fill: var(--icon-moon);
+}
+
+.switcher:focus-visible .iconWrapper[data-active='false'] svg path {
+  fill: var(--color-neutral-300);
+}

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Roboto, Open_Sans } from 'next/font/google';
 import Providers from '@/features/theme/ThemeProvider';
-import ThemeSwither from '@/features/theme/ThemeSwitcher';
 
 import './globals.css';
 
@@ -28,9 +27,7 @@ export default function RootLayout({
   return (
     <html lang='ru' suppressHydrationWarning>
       <body className={`${open_sans.variable} ${roboto.variable}`}>
-        <Providers>
-          <ThemeSwither>{children}</ThemeSwither>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

@@ -4,3 +4,7 @@ export { default as ArrowUpIcon } from './IconArrowUp';
 export { default as GitIcon } from './IconGit';
 export { default as MailIcon } from './IconMail';
 export { default as TelegramIcon } from './IconTelegram';
+export { default as CardLinkIcon } from './IconCardLInk';
+export { default as LoadingIcon } from './IconLoading';
+export { default as MoonIcon } from './IconMoon';
+export { default as SunIcon } from './IconSun';
