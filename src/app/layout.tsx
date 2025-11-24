@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Roboto, Open_Sans } from 'next/font/google';
 import Providers from '@/features/theme/ThemeProvider';
 
-import './globals.css';
+import './globals.scss';
 
 const roboto = Roboto({
   variable: '--font-roboto',
