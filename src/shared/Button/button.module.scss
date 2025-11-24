@@ -16,19 +16,15 @@
   -o-border-radius: var(--radius-reg);
 }
 
-:root {
-  --transition-fast: all 0.2s ease;
-}
-
 .button,
 .priority_1,
 .priority_2,
 .priority_3 {
-  transition: var(--transition-fast);
-  -webkit-transition: var(--transition-fast);
-  -moz-transition: var(--transition-fast);
-  -ms-transition: var(--transition-fast);
-  -o-transition: var(--transition-fast);
+  transition: var(--transition-var);
+  -webkit-transition: var(--transition-var);
+  -moz-transition: var(--transition-var);
+  -ms-transition: var(--transition-var);
+  -o-transition: var(--transition-var);
 }
 
 .button.primary {
@@ -41,7 +37,6 @@
   height: 48px;
 }
 
-/* --- Стили variant=secondary (берём из твоего примера) --- */
 .secondary {
   padding: 12px 16px;
   background-color: var(--color-secondary-400);
@@ -79,7 +74,6 @@
   cursor: not-allowed;
 }
 
-/* --- Loading states --- */
 .loading-primary {
   background-color: var(--color-primary-300);
 }
@@ -90,7 +84,6 @@
   background-color: var(--color-neutral-0);
 }
 
-/* --- Disabled --- */
 .button.disabled {
   cursor: not-allowed;
   opacity: 0.5;

@@ -36,13 +36,12 @@
   -o-border-radius: 0.4rem;
 }
 
-/* Цвет иконок */
+
 .iconWrapper svg path {
   fill: var(--icon-sun);
   transition: all 0.2s ease;
 }
 
-/* Активная иконка */
 .iconWrapper[data-active='true'] {
   background-color: var(--color-neutral-400);
   box-shadow: var(--shadow-base-default);
@@ -56,7 +55,6 @@
   fill: var(--icon-sun);
 }
 
-/* Неактивная иконка */
 .iconWrapper[data-active='false'] {
   background-color: transparent;
 }
@@ -65,7 +63,6 @@
   fill: var(--color-neutral-500);
 }
 
-/* Фокус */
 .switcher:focus-visible {
   outline: 2px solid var(--color-base-white);
   outline-offset: var(--outline-offset, 2px);

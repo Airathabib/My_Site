@@ -1,8 +1,5 @@
 @import '@/app/styles/variables/_mixins';
-:root {
-  --transition-var: background-color 0.2s ease, color 0.2s ease,
-    outline 0.2s ease;
-}
+
 .Card {
   display: flex;
   flex-direction: column;
