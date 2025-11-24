@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
             <Link
               className={styles.FooterContactsLink}
               href='mailto:airat.24@mail.ru'
-              target='_blank'
+              aria-label='Написать письмо на airat.24@mail.ru'
             >
               <div>
                 <Icon name='mail' size={22} />
