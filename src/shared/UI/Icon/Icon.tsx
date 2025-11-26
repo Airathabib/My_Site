@@ -1,6 +1,5 @@
 import * as Icons from './Icons/index';
 
-//
 export type IconName =
   | 'tags'
   | 'react'
@@ -32,9 +31,7 @@ export const Icon: React.FC<IconProps> = ({
         name.charAt(0).toUpperCase() + name.slice(1)
       }Icon` as keyof typeof Icons
     ];
-  console.log('Found component:', IconComponent);
   if (!IconComponent) {
-    console.warn(`Icon "${name}" not found`);
     return null;
   }
 
