@@ -98,4 +98,22 @@ export const LAYOUT: CardInfo[] = [
     gitLink: 'https://github.com/Airathabib/snake',
     showLink: 'https://airathabib.github.io/snake/',
   },
+  {
+    id: crypto.randomUUID(),
+    src: '/design-project.png',
+    alt: 'HTML + CSS work',
+    title: 'Учебное задание. Верстка лендинга',
+    descr: 'Учебное задание. Верстка лендинга',
+    gitLink: 'https://github.com/Airathabib/-Repair-Design-Project-',
+    showLink: 'https://repair-design-project-dun.vercel.app/',
+  },
+  {
+    id: crypto.randomUUID(),
+    src: '/simple-project.png',
+    alt: 'JS + Webpack work',
+    title: 'Pet задание. Верстка лендинга только на JS + webpack',
+    descr: 'Pet задание. Верстка лендинга только на JS + webpack',
+    gitLink: 'https://github.com/Airathabib/Simple-Project',
+    showLink: 'https://simple-project-om15.vercel.app/',
+  },
 ];
