@@ -11,6 +11,17 @@ export type CardInfo = {
 export const REACT_PROJECT: CardInfo[] = [
   {
     id: crypto.randomUUID(),
+    src: '/auto-seller.png',
+    alt: 'TANK_AUTO',
+    title: 'АВТОРУСЬ TANK',
+    descr:
+      'Современный адаптивный лендинг официального дилера автомобилей TANK.',
+    gitLink: 'https://github.com/Airathabib/auto_seller',
+    showLink:
+      'http://auto-seller-git-main-airats-projects-5df64959.vercel.app/',
+  },
+  {
+    id: crypto.randomUUID(),
     src: '/book-shop.png',
     alt: 'Book-Shop',
     title: 'Онлайн магазин книг',
@@ -46,6 +57,16 @@ export const REACT_PROJECT: CardInfo[] = [
       'Современный интернет-магазин с полной функциональностью. Учебный fullstack-проект с использованием: фронтенда на React + Redux Toolkit и бэкенда на Node.js + Express + PostgreSQL.',
     gitLink: 'https://github.com/Airathabib/skyLine-gadgets-frontend',
     showLink: 'https://sky-line-gadgets-frontend.vercel.app/',
+  },
+  {
+    id: crypto.randomUUID(),
+    src: '/font-converter.png',
+    alt: 'Font & Icon Converter',
+    title: 'Font & Icon Converter (Electron)',
+    descr:
+      'Desktop-приложение для конвертации шрифтов (TTF/OTF → WOFF/WOFF2) и генерации фавиконок. Построено на Electron + React + TypeScript + Node.js. Включает встроенный Express-сервер, работу с бинарными данными (sharp, ttf2woff), CSP-политики и оптимизированную сборку через Vite.',
+    gitLink: 'https://github.com/Airathabib/font-converter',
+    showLink: '',
   },
 ];
 

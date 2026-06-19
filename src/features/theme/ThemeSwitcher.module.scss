@@ -3,6 +3,7 @@
   align-items: end;
   justify-content: end;
 }
+
 .switcher {
   display: flex;
   align-items: center;
@@ -16,10 +17,6 @@
   gap: var(--gap-default);
   transition: all 0.2s ease;
   border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
 }
 
 .iconWrapper {
@@ -30,12 +27,7 @@
   height: 32px;
   border-radius: 0.4rem;
   transition: all 0.2s ease;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
 }
-
 
 .iconWrapper svg path {
   fill: var(--icon-sun);

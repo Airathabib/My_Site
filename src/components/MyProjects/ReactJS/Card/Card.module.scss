@@ -10,7 +10,9 @@
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
 
   &ImageWrapper {
     overflow: hidden;
@@ -51,14 +53,25 @@
     -moz-border-radius: 0.25rem;
     -ms-border-radius: 0.25rem;
     -o-border-radius: 0.25rem;
-    transition: background-color 0.2s ease, color 0.2s ease, outline 0.2s ease;
-    -webkit-transition: background-color 0.2s ease, color 0.2s ease,
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
       outline 0.2s ease;
-    -moz-transition: background-color 0.2s ease, color 0.2s ease,
+    -webkit-transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
       outline 0.2s ease;
-    -ms-transition: background-color 0.2s ease, color 0.2s ease,
+    -moz-transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
       outline 0.2s ease;
-    -o-transition: background-color 0.2s ease, color 0.2s ease,
+    -ms-transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      outline 0.2s ease;
+    -o-transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
       outline 0.2s ease;
     &:hover {
       background-color: var(--color-neutral-100);
@@ -80,5 +93,24 @@
         color: inherit;
       }
     }
+  }
+}
+
+.CardBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: var(--bg-muted, #f1f5f9);
+  color: var(--text-muted, #64748b);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  // Для тёмной темы (если используете CSS-переменные)
+  :global([data-theme='dark']) & {
+    background: #334155;
+    color: #cbd5e1;
   }
 }

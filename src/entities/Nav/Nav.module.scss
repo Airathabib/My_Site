@@ -22,20 +22,12 @@
     display: flex;
     align-items: center;
     opacity: 1;
-    transition: var(--transition-var);
-    -webkit-transition: var(--transition-var);
-    -moz-transition: var(--transition-var);
-    -ms-transition: var(--transition-var);
-    -o-transition: var(--transition-var);
+    transition: all var(--transition-var) ease;
+
     &:hover {
       color: var(--color-secondary-400);
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -o-transform: scale(1.1);
+      transform: scale(1.02);
       border: none;
-      padding: 0.2rem;
       text-shadow: var(--shadow-base-hover);
     }
   }
@@ -63,10 +55,6 @@
       bottom: 0;
       z-index: 10;
       transition: var(--transition-var);
-      -webkit-transition: var(--transition-var);
-      -moz-transition: var(--transition-var);
-      -ms-transition: var(--transition-var);
-      -o-transition: var(--transition-var);
     }
     &MobileBtn {
       display: block;
