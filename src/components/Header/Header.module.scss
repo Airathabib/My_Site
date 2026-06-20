@@ -2,26 +2,22 @@
   position: fixed;
   top: 0;
 
-  // 🔹 Центрируем хедер по горизонтали
   left: 50%;
   transform: translateX(-50%);
 
-  // 🔹 Ограничиваем ширину (как у основного контента)
   width: 100%;
   max-width: 1440px;
 
   z-index: 1000;
 
-  // 🔹 Фон с учётом темы + glassmorphism
+
   background: var(--color-neutral-0);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
-  // 🔹 Полупрозрачность для эффекта наложения
-  // ⚠️ Важно: это переопределит background выше, поэтому порядок важен
+
   background: color-mix(in srgb, var(--color-neutral-0) 85%, transparent);
 
-  // Тень только снизу, чтобы не обрезалась по бокам
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 
   display: flex;

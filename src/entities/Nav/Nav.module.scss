@@ -45,8 +45,7 @@
       align-items: center;
       justify-content: center;
       position: fixed;
-      background: inherit;
-      backdrop-filter: blur(25px);
+      background-color: var(--color-neutral-0);
       gap: 3rem;
       opacity: 1;
       left: -100%;
